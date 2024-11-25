@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Indie+Flower&family=Luckiest+Guy&display=swap');
+
+body {
+    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#logo {
+    flex: 1;
+    width: 100%;
+}
+
+header {
+    background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#logo {
+    margin-right: auto; /* Move a logo para a esquerda */
+}
+
+#logo img {
+    width: 80px; /* Novo tamanho ajustado */
+    height: 80px; /* Novo tamanho ajustado */
+    border-radius: 50px; /* Torna a imagem redonda */
+    object-fit: cover; /* Garante que a imagem cubra todo o elemento, mantendo a proporção */
+    transition: transform 0.3s ease; /* Transição suave para o efeito hover */
+}
+
+#logo img:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% ao passar o mouse */
+}
+
+#menu {
+    flex: 1; /* O menu ocupará o espaço restante */
+    display: flex;
+    justify-content: flex-end; /* Move o menu para a direita */
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+#menu ul li {
+    margin: 0 15px;
+    transition: color 0.3s ease, font-size 0.3s ease; /* Transição suave para cor e tamanho da fonte */
+}
+
+#menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#menu ul li a:hover {
+    color: #FFD700; /* Dourado ao passar o mouse */
+}
+
+#menu ul li:hover {
+    color: #FFD700; /* Dourado ao passar o mouse */
+    font-size: 15px; /* Aumenta o tamanho da fonte ao passar o mouse */
+    transform: scale(1.2); /* Aumenta a imagem em 10% ao passar o mouse */
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card {
+    background-image: linear-gradient(-225deg, #7742B2 0%, #F180FF 52%, #FD8BD9 100%);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px; /* Ajuste para caber 3 cards por linha */
+    max-width: 400px; /* Tamanho máximo do card */
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para o efeito hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta o card em 5% ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+.card img {
+    width: 20vw; /* 20% da largura da viewport */
+    height: 20vw; /* 20% da largura da viewport */
+    max-width: 200px; /* Tamanho máximo */
+    max-height: 200px; /* Tamanho máximo */
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Garante que a imagem cubra todo o elemento, mantendo a proporção */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+    .card img {
+        width: 40vw; /* 40% da largura da viewport */
+        height: 40vw; /* 40% da largura da viewport */
+        max-width: 100px; /* Tamanho máximo */
+        max-height: 100px; /* Tamanho máximo */
+    }
+}
+
+/* Ajustes para telas maiores */
+@media (min-width: 1200px) {
+    .card img {
+        width: 10vw; /* 10% da largura da viewport */
+        height: 10vw; /* 10% da largura da viewport */
+        max-width: 300px; /* Tamanho máximo */
+        max-height: 300px; /* Tamanho máximo */
+    }
+}
+
+.card h2 {
+    color: #FFD700; /* Dourado para destacar os nomes das atrizes */
+    text-align: center;
+}
+
+.card .details {
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    height: 15%;
+    background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+}
+
+.footer a {
+    margin: 0 10px;
+}
+
+.footer .social-icon {
+    width: 40px; /* Tamanho do ícone */
+    height: 40px; /* Tamanho do ícone */
+    transition: transform 0.3s ease; /* Transição suave para o efeito hover */
+    border: none; /* Remove bordas */
+}
+
+.footer .social-icon:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
